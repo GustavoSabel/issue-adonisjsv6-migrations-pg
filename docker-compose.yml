@@ -24,11 +24,3 @@ services:
       - 8080:80
     depends_on:
       - db
-
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    restart: always
-    depends_on:
-      - db
